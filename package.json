@@ -1,0 +1,23 @@
+{
+  "name": "javascript-baseball-precourse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adultlee/javascript-baseball-precourse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adultlee/javascript-baseball-precourse/issues"
+  },
+  "homepage": "https://github.com/adultlee/javascript-baseball-precourse#readme",
+  "dependencies": {
+    "serve": "^14.0.1"
+  }
+}
