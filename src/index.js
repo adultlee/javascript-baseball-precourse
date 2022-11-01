@@ -4,15 +4,19 @@ import SubmitButton from "./components/SubmitButton.js";
 import RestartButton from "./components/ReStartButton.js";
 
 export default function BaseballGame() {
-  let computerInputNumbers = getComputerInputNumber();
+  const computerInputNumbers = getComputerInputNumber();
 
   this.play = function (computerInputNumbers, userInputNumbers) {
     return makeResultString(computerInputNumbers, userInputNumbers);
   };
 
+  this.setComputerInputNumbers = () => {
+    new SubmitButton(getComputerInputNumber(), this.play);
+  };
+
   new SubmitButton(computerInputNumbers, this.play);
 
-  new RestartButton();
+  new RestartButton(this.setComputerInputNumbers);
 }
 
 new BaseballGame();
